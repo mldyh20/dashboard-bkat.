@@ -1,0 +1,279 @@
+
+/* ================================
+   SIDEBAR
+================================ */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 5;
+
+  width: 250px;
+  padding: 25px 17px;
+
+  background: #173b68;
+  color: #ffffff;
+}
+
+/* ================================
+   BRAND / LOGO
+================================ */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  padding: 4px 8px 32px;
+}
+
+/* Brand Mark */
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+
+  width: 39px;
+  height: 39px;
+
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1c5794;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* Brand Name */
+
+.brand strong {
+  display: block;
+
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.brand small {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #c2d2e6;
+  font-size: 9px;
+}
+
+/* ================================
+   NAVIGATION LABEL
+================================ */
+
+.nav-label {
+  padding: 0 10px 12px;
+
+  color: #9eb5d1;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* ================================
+   SIDEBAR NAVIGATION
+================================ */
+
+.sidebar nav {
+  display: grid;
+  gap: 7px;
+}
+
+/* Navigation Item */
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 13px;
+
+  border-radius: 8px;
+
+  color: #d8e4f2;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* Navigation Icon */
+
+.nav-item span {
+  width: 18px;
+
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Active Navigation */
+
+.nav-item.active {
+  background: #2b5e95;
+  color: #ffffff;
+
+  box-shadow: inset 3px 0 #8fc2f4;
+}
+
+/* ================================
+   SIDEBAR BOTTOM
+================================ */
+
+.sidebar-bottom {
+  margin-top: auto;
+  padding: 18px 8px 3px;
+
+  border-top: 1px solid #36577d;
+
+  color: #a9bfd8;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+.sidebar-bottom strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 700px) {
+  .sidebar {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    padding: 12px 15px;
+  }
+
+  /* Brand */
+
+  .brand {
+    padding: 0 5px 12px;
+  }
+
+  /* Hide Additional Elements */
+
+  .sidebar .nav-label,
+  .sidebar-bottom {
+    display: none;
+  }
+
+  /* Horizontal Navigation */
+
+  .sidebar nav {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .nav-item {
+    padding: 9px 11px;
+    white-space: nowrap;
+  }
+}
+
+
+/* LOGO BKAT */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 18px;
+}
+
+.brand-logo {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.brand-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.brand-info strong {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.brand-info small {
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nav-arrow {
+  margin-left: auto;
+  font-size: 12px;
+  transition: transform 0.2s;
+}
+
+.nav-arrow.buka {
+  transform: rotate(180deg);
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 2px 0 6px 22px;
+  padding-left: 12px;
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.submenu-item {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 7px;
+  color: #b8c8e0;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.submenu-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.submenu-item.active {
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+  font-weight: 600;
+}

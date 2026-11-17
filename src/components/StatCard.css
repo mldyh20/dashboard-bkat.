@@ -1,0 +1,68 @@
+
+/* ================================
+   STAT CARD
+================================ */
+
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #e8edf4;
+  border-radius: 12px;
+  padding: 17px 18px;
+  box-shadow: 0 3px 12px rgba(26, 54, 93, 0.035);
+}
+
+/* ================================
+   STAT CARD HEADER
+================================ */
+
+.stat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+
+  color: #718096;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* ================================
+   STAT CARD ICON
+================================ */
+
+.stat-icon {
+  display: grid;
+  place-items: center;
+
+  width: 31px;
+  height: 31px;
+
+  border-radius: 9px;
+  background: #edf4fc;
+  color: #3974bd;
+
+  font-size: 16px;
+}
+
+/* ================================
+   STAT CARD VALUE
+================================ */
+
+.stat-value {
+  margin-top: 13px;
+
+  color: #193b66;
+  font-size: 27px;
+  font-weight: 800;
+}
+
+/* ================================
+   STAT CARD NOTE
+================================ */
+
+.stat-note {
+  margin-top: 4px;
+
+  color: #9aa6b6;
+  font-size: 10px;
+}

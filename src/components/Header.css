@@ -1,0 +1,78 @@
+
+/* ================================
+   TOP HEADER
+================================ */
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  padding: 0 0 18px;
+  border-bottom: 1px solid #e5ebf2;
+}
+
+/* ================================
+   HEADER KICKER
+================================ */
+
+.header-kicker {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #8a9ab0;
+  font-size: 9px;
+  letter-spacing: 1.3px;
+}
+
+/* ================================
+   HEADER TITLE
+================================ */
+
+.top-header strong {
+  color: #405875;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ================================
+   HEADER RIGHT
+================================ */
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #718096;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+/* ================================
+   ONLINE INDICATOR
+================================ */
+
+.online-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+  background: #27a783;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 700px) {
+  .top-header {
+    padding-bottom: 12px;
+  }
+
+  .header-right {
+    display: none;
+  }
+}

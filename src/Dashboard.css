@@ -1,0 +1,340 @@
+/* =========================================
+   FONT
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+/* =========================================
+   LAYOUT UTAMA
+========================================= */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  padding: 30px 34px;
+}
+
+
+/* =========================================
+   HEADER / WELCOME
+========================================= */
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  margin: 26px 0 24px;
+}
+
+.eyebrow {
+  color: #3974bd;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin: 0 0 9px;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 1.3;
+  margin: 0;
+  color: #17345d;
+}
+
+.muted {
+  color: #7b899d;
+  font-size: 12px;
+  margin: 7px 0 0;
+}
+
+.period {
+  background: white;
+  border: 1px solid #e5ebf3;
+  padding: 11px 15px;
+  border-radius: 9px;
+  font-size: 12px;
+  color: #718096;
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   STATISTIK / SUMMARY CARDS
+========================================= */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+
+/* =========================================
+   GRAFIK / CHARTS
+========================================= */
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+
+/* =========================================
+   PANEL / CARD
+========================================= */
+.panel {
+  background: white;
+  border: 1px solid #e8edf4;
+  border-radius: 13px;
+  padding: 20px;
+  box-shadow: 0 3px 12px rgba(26, 54, 93, 0.035);
+  min-width: 0;
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.panel h2 {
+  margin: 0;
+  color: #1d3557;
+  font-size: 15px;
+}
+
+
+/* =========================================
+   TABEL DATA
+========================================= */
+.table-heading {
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.table-actions {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.table-actions input,
+.table-actions select {
+  border: 1px solid #dfe6ef;
+  border-radius: 8px;
+  padding: 9px 11px;
+  color: #52647c;
+  background: white;
+  font-size: 11px;
+}
+
+.table-actions input {
+  min-width: 210px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+footer {
+  text-align: center;
+  color: #9aa6b6;
+  font-size: 10px;
+  padding: 24px 0 5px;
+}
+
+
+/* =========================================
+   INSTANSI PEMOHON
+========================================= */
+.instansi-panel {
+  margin-bottom: 18px;
+}
+
+/* Pencarian */
+.instansi-cari {
+  width: 240px;
+  max-width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #dfe6ef;
+  border-radius: 8px;
+  background: white;
+  color: #52647c;
+  font-family: inherit;
+  font-size: 11px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.instansi-cari::placeholder {
+  color: #9aa6b6;
+}
+
+.instansi-cari:focus {
+  border-color: #3974bd;
+  box-shadow: 0 0 0 3px rgba(57, 116, 189, 0.12);
+}
+
+/* Kartu ringkasan kelompok */
+.kelompok-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.kelompok-card {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 120px;
+  padding: 11px 15px;
+  background: #f5f8fc;
+  border: 1px solid #e5ebf3;
+  border-radius: 10px;
+}
+
+.kelompok-card span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #7b899d;
+  text-transform: uppercase;
+}
+
+.kelompok-card strong {
+  font-size: 20px;
+  color: #17345d;
+}
+
+/* Daftar instansi */
+.instansi-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Mode "Tampilkan semua": bisa di-scroll */
+.instansi-list.panjang {
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.instansi-row {
+  display: grid;
+  grid-template-columns: 180px 1fr 40px;
+  align-items: center;
+  gap: 14px;
+}
+
+.instansi-nama {
+  font-size: 12px;
+  color: #29415f;
+  font-weight: 600;
+}
+
+.instansi-bar {
+  height: 8px;
+  background: #edf1f6;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.instansi-bar-isi {
+  height: 100%;
+  background: #3974bd;
+  border-radius: 99px;
+}
+
+.instansi-jumlah {
+  font-size: 12px;
+  color: #17345d;
+  text-align: right;
+}
+
+/* Tombol tampilkan semua / lebih sedikit */
+.instansi-toggle {
+  display: block;
+  margin: 18px auto 0;
+  padding: 8px 20px;
+  border: 1px solid #3974bd;
+  border-radius: 999px;
+  background: transparent;
+  color: #3974bd;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.instansi-toggle:hover {
+  background: #3974bd;
+  color: white;
+}
+
+
+/* =========================================
+   RESPONSIVE TABLET
+========================================= */
+@media (max-width: 1050px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE MOBILE
+========================================= */
+@media (max-width: 700px) {
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .welcome {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 21px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .panel {
+    padding: 15px;
+  }
+
+  .table-actions {
+    width: 100%;
+  }
+
+  .table-actions input {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .instansi-cari {
+    width: 100%;
+  }
+
+  .instansi-row {
+    grid-template-columns: 120px 1fr 30px;
+    gap: 10px;
+  }
+}
