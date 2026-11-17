@@ -1,4 +1,3 @@
-
 // Daftar jenis layanan resmi + kata kunci untuk mencocokkan isi kolom di spreadsheet
 export const JENIS_LAYANAN = [
   { label: "Permintaan Data", kata: ["permintaan data"] },
