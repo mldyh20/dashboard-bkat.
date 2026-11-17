@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar.jsx";
 import Header from "./components/Header.jsx";
 import StatCard from "./components/StatCard.jsx";
 import ServiceChart from "./components/ServiceChart.jsx";
-import { JENIS_LAYANAN, cocokJenis } from "./jenisLayanan.js";
+import { JENIS_LAYANAN, cocokJenis } from "./JenisLayanan.js";
 import useSheetData from "./useSheetData.js";
 
 import "./Dashboard.css";
