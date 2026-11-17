@@ -3,7 +3,7 @@ import React, { useMemo, useState } from "react";
 import Sidebar from "./Sidebar.jsx";
 import Header from "./Header.jsx";
 import DataTable from "./DataTable.jsx";
-import { cocokJenis } from "../jenisLayanan.js";
+import { cocokJenis } from "../JenisLayanan.js";
 import useSheetData from "../useSheetData.js";
 
 import "./DataPelayanan.css";
