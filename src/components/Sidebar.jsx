@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
 import logoBKAT from "../logo.png";
-import { cocokJenis } from "../JenisLayanan.js";
+import { JENIS_LAYANAN, cocokJenis } from "../JenisLayanan.js";
 
 export default function Sidebar({
   activePage,
